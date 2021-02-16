@@ -128,7 +128,7 @@ def scrape():
 
     mars_scrape = {
         "title": titles,
-        'paraggraph': paragraphs,
+        'paragraph': paragraphs,
         'featured_image_url': featured_image_url,
         'facts': facts_html,
         'hemisphere':hemisphere_image_urls

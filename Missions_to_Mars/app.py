@@ -12,7 +12,7 @@ db = client.mars_db
 @app.route("/")
 def index():
     mars_scrape = db.mars_data.find_one()
-    return render_template("index.html", titles=mars_scrape.title, paragraphs = mars_scrape.paragraph)
+    return render_template("index.html", mars_scrape=mars_scrape)
 
 
 @app.route("/scrape")

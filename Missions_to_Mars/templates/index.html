@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mars Data</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="jumbotron text-center">
+      <h1>Latest Mars Data</h1>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Get The Latest Mars Info</a></p>
+    </div>
+
+    <!-- Mars latest news info -->
+    <table border = '1'>
+            <tr>
+                <th>Titles</th>
+                <th>Brief Description</th>
+            </tr>
+            <tr>
+                <td>{{ mars_scrape['title'][0] }}</td>
+                <td>{{ mars_scrape['paragraph'][0] }}</td>
+            </tr>
+
+            <tr>
+                <td>{{ mars_scrape['title'][1] }}</td>
+                <td>{{ mars_scrape['paragraph'][1] }}</td>
+            </tr>
+
+            <tr>
+                <td>{{ mars_scrape['title'][2] }}</td>
+                <td>{{ mars_scrape['paragraph'][2] }}</td>
+            </tr>
+
+            <tr>
+                <td>{{ mars_scrape['title'][3] }}</td>
+                <td>{{ mars_scrape['paragraph'][3] }}</td>
+            </tr>
+
+            <tr>
+                <td>{{ mars_scrape['title'][4] }}</td>
+                <td>{{ mars_scrape['paragraph'][4] }}</td>
+            </tr>
+
+
+     <table>
+
+
+  </div>
+</body>
+
+</html>
+
