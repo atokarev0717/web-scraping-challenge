@@ -39,11 +39,11 @@ def scrape():
     soup = bs(html, 'html.parser')
 
 
-    browser.click_link_by_partial_text('McMurdo Crater')
+    browser.links.find_by_partial_text('McMurdo Crater').click()
     time.sleep(3)
 
-    browser.click_link_by_partial_text('Download')
-    time.sleep(3)
+    browser.links.find_by_partial_text('Download').click()
+    time.sleep(10)
     html1 = browser.html
     image_soup = bs(html1, 'html.parser')
 
@@ -65,7 +65,7 @@ def scrape():
     browser.visit(astrogeology_url)
     time.sleep(1)
 
-    browser.click_link_by_partial_text('Cerberus')
+    browser.links.find_by_partial_text('Cerberus').click()
     html1 = browser.html
     soup = bs(html1, 'html.parser')
 
@@ -78,7 +78,7 @@ def scrape():
     browser.visit(astrogeology_url)
     time.sleep(1)
 
-    browser.click_link_by_partial_text('Schiaparelli')
+    browser.links.find_by_partial_text('Schiaparelli').click()
     html1 = browser.html
     soup = bs(html1, 'html.parser')
 
@@ -91,7 +91,7 @@ def scrape():
     browser.visit(astrogeology_url)
     time.sleep(1)
 
-    browser.click_link_by_partial_text('Syrtis')
+    browser.links.find_by_partial_text('Syrtis').click()
     html1 = browser.html
     soup = bs(html1, 'html.parser')
 
@@ -105,7 +105,7 @@ def scrape():
     browser.visit(astrogeology_url)
     time.sleep(1)
 
-    browser.click_link_by_partial_text('Valles')
+    browser.links.find_by_partial_text('Valles').click()
     html1 = browser.html
     soup = bs(html1, 'html.parser')
 
